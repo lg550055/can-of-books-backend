@@ -1,11 +1,33 @@
-# Start your own "Can of Books" App
+# Project Name
 
-This repository has starter code to begin work on creating your own online bookshelf.
+**Author**: Polo Gonzalez
+**Version**: 1.0.0
 
-## What can books do?
+## Overview
+Serves results of queries formulated by the project's frontend by performing CRUD operations on database.
 
-Books are life-changing. They have the power to enlighten, educate, entertain, heal, and help us grow. Build out this code base to create an web app to track what books have impacted you, and what's recommended to read next.
+## Getting Started
+- Dependencies on package.json
+- May use npm build
+- Then npm start
 
-## Use this template
+## Architecture
+Espress server that connects to Mongo DB.  Provides API to project frontend.
 
-Clone this repo to your own account with the green "Use this template" button. Then, add any collaborators. Now you are ready to start adding features! Deploy your site to let the world know which books have had the greatest impact on you, and what's recommended. Enjoy!
+## Change Log
+<!-- Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
+
+01-01-2001 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource. -->
+
+## Credit and Collaborations
+- Ryan Gallaway - Instructor
+- Riva Davidowski - TA
+
+---
+
+## Estimates
+Name of feature: Book schema and route
+Estimate of time needed to complete: 150 min
+Start time: _____
+Finish time: _____
+Actual time needed to complete: _____
