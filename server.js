@@ -22,10 +22,6 @@ app.get('/', (req, res) => {
   res.send('server request received');
 });
 
-app.get('/cats', (req, res) => {
-  res.send('Cats route here');
-});
-
 app.get('/books', handleGetBooks);
 
 const Book = require('./models/book');
