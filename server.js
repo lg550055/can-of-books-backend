@@ -25,7 +25,7 @@ app.get('/', (req, res) => {
 
 app.get('/books', handleGetBooks);
 app.post('/books', handlePostBooks);
-app.delete('books/:id', handleDeleteBooks);
+app.delete('/books/:id', handleDeleteBooks);
 
 const Book = require('./models/book');
 
