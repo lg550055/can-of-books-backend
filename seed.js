@@ -18,14 +18,14 @@ async function seed() {
     title: 'The Little Prince',
     description: 'Kid and adult friendly essay on important life concepts',
     status: 'read',
-    email: 'rivkadavidowski@fakeuser.com'
+    email: 'polo@fakeuser.com'
   });
 
   await Book.create({
     title: 'Crime and Punishment',
     description: 'Classic russian novel delving into human emotions',
     status: 'read',
-    email: 'rivkadavidowski@fakeuser.com'
+    email: 'polo@fakeuser.com'
   });
 
   console.log('Books saved');

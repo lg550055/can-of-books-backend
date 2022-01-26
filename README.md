@@ -15,9 +15,7 @@ Serves results of queries formulated by the project's frontend by performing CRU
 Espress server that connects to Mongo DB.  Provides API to project frontend.
 
 ## Change Log
-<!-- Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
-
-01-01-2001 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource. -->
+01.25.2022 - Application is deployed and has fully-functional express server, with GET, POST and DELETE routes for the location resource.
 
 ## Credit and Collaborations
 - Ryan Gallaway - Instructor
