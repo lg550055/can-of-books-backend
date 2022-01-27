@@ -26,6 +26,7 @@ app.get('/', (req, res) => {
 app.get('/books', handleGetBooks);
 app.post('/books', handlePostBooks);
 app.delete('/books/:id', handleDeleteBooks);
+app.put('/books/:id', handlePutBooks);
 
 const Book = require('./models/book');
 
@@ -35,9 +36,9 @@ async function handleGetBooks(req, res) {
     queryObject = {email: req.query.email};
   }
   try {
-    let booksFromDb = await Book.find(queryObject);
-    if (booksFromDb.length > 0) {
-      res.status(200).send(booksFromDb);
+    let books = await Book.find(queryObject);
+    if (books.length > 0) {
+      res.status(200).send(books);
     } else {
       res.status(404).send('No books found');
     }
@@ -59,9 +60,19 @@ async function handleDeleteBooks(req, res) {
   let id = req.params.id;
   try {
     await Book.findByIdAndDelete(id);
-    res.status(204).send('Book deleted');
+    res.status(200).send('Book deleted');
   } catch(err) {
     res.status(404).send('Unable to delete '+id);
+  }
+}
+
+async function handlePutBooks(req, res) {
+  let id = req.params.id;
+  try {
+    let updatedBook = await Book.findByIdAndUpdate(id, req.body, {new:true, overwrite:true});
+    res.status(200).send(updatedBook);
+  } catch(err) {
+    res.status(404).send('Unable to update '+id);
   }
 }
 
